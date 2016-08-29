@@ -1,3 +1,4 @@
 application/config/database.php
 sftp-config.json
 .idea
+devops/docker
