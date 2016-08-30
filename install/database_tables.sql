@@ -77,7 +77,8 @@ CREATE TABLE IF NOT EXISTS `settings` (
   `name` tinytext COLLATE utf8_unicode_ci NOT NULL,
   `value` tinytext COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
-  KEY `id` (`id`)
+  KEY `id` (`id`),
+  UNIQUE KEY `name` (`name`(50))
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
