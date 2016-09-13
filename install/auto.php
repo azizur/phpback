@@ -13,7 +13,6 @@ define('BASEPATH', '.');    //Make this script work with nginx
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 include 'pretty_message.php';
-include "../application/config/database.php";
 include '../application/libraries/Hashing.php';
 
 $hashing = new Hashing();
