@@ -23,7 +23,7 @@ if(file_exists('install/index.php')){
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'development');
+	define('ENVIRONMENT', (getenv('ENVIRONMENT') !== false) ? getenv('ENVIRONMENT') : 'development');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
